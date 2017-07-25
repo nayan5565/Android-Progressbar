@@ -1,5 +1,6 @@
 package com.nayan.progressbaractivity;
 
+import android.content.res.ColorStateList;
 import android.graphics.Color;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
@@ -57,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
                 if (progressStatus > 100) {
                     progressStatus=0;
                 }
-
+                progressBar.setProgressTintList(ColorStateList.valueOf(Color.GREEN));
                 progressBar.setProgress(progressStatus);
                 textView.setText(progressStatus + "/" + progressBar.getMax());
                 change();
