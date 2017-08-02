@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
                 if (progressStatus > 100) {
                     progressStatus=0;
                 }
-                progressBar.setProgressTintList(ColorStateList.valueOf(Color.GREEN));
+//                progressBar.setProgressTintList(ColorStateList.valueOf(Color.GREEN));
                 progressBar.setProgress(progressStatus);
                 textView.setText(progressStatus + "/" + progressBar.getMax());
                 change();
